@@ -6,7 +6,6 @@ import "./css/style.css";
 // Import pages
 import SalaryCalculator from "./pages/SalaryCalculator";
 import NotFound from "./components/NotFound";
-import SalaryDescription from "./pages/SalaryDescription";
 
 function App() {
   const location = useLocation();
@@ -21,7 +20,6 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<SalaryCalculator />} />
-        <Route exact path="/description" element={<SalaryDescription />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
